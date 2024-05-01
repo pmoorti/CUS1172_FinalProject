@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title Video Dashboard
+        block css
+            link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+            link(rel='stylesheet', href='/resources/styling2.css')
+        block script
+    body
+        div.container
+            h1 Video Dashboard
+            h3 Videos I Shared
+            ul
+                each video in db.model.videoData
+                    li
+                        a(href=`${video.url}`) #{video.title}  
+            h3 All Videos
+            ul
+                each video in db.model.videoData
+                    li
+                        a(href=`${video.url}`) #{video.title}  
+            a(href="/video/new_video" class="btn share-video-btn btn-outline-primary") Share a Video

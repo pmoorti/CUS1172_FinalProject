@@ -1,0 +1,31 @@
+doctype html 
+html 
+head 
+        title Sign Up 
+        block css 
+            <link rel='stylesheet' href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+            <link rel='stylesheet' href = '/resources/styling.css'>
+        block script 
+body 
+    div.container
+        h2 Register As A New User 
+        h3 Please enter the following the feilds
+        if (message)
+            p.message.message-class= message 
+        form(role = 'form' method = 'POST' action = action_url)
+            div.form-group 
+                label(for = 'firstName') First Name: 
+                input#firstName.form-control(type = 'text' , placeholder = 'Enter First Name here' name = 'firstName')
+            div.form-group 
+                label(for = 'lastName') Last Name: 
+                input#lastName.form-control(type = 'text' , placeholder = 'Enter Last Name here' name = 'lastName')
+            div.form-group 
+                label(for = 'email') Email: 
+                input#email.form-control(type = 'text' , placeholder = 'Enter Email here' name = 'email')
+            div.form-group 
+                label(for = 'username') Username: 
+                input#username.form-control(type = 'text' , placeholder = 'Enter a Username' name = 'username')
+            div.form-group 
+                label(for = 'password') Password: 
+                input#password.form-control(type = 'text' , placeholder = 'Enter a Password' name = 'password')
+            button.btn(type = 'submit', class = 'button') Sign Up
