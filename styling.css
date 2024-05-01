@@ -1,0 +1,56 @@
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #edd7e8;
+    border-radius: 5px;
+    background-color: #edd0e8; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    color: #666; 
+    margin-bottom: 20px;
+}
+
+
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #de69c8; 
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.button:hover {
+    background-color: #b3005f;
+}
